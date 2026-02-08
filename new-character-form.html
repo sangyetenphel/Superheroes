@@ -47,6 +47,42 @@
         </div>
     </nav>
 
+    <div class="container p-5">
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter superhero name">
+            </div>
+            <div class="mb-3">
+                <label for="universe" class="form-label required">Universe</label>
+                <select class="form-select" id="universe" name="universe" required>
+                    <option value="" selected disabled>Choose a universe</option>
+                    <option value="marvel">Marvel Universe</option>
+                    <option value="dc">DC Universe</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="role" class="form-label required">Character Role</label>
+                <select class="form-select" id="role" name="role" required>
+                    <option value="" selected disabled>Select role</option>
+                    <option value="hero">Hero</option>
+                    <option value="villain">Villain</option>
+                    <option value="antihero">Anti-Hero</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Upload Hero Image</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label required">Short Description</label>
+                <textarea class="form-control" id="description" name="description" rows="3" required placeholder="Briefly describe the character..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
